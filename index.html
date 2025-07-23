@@ -2,94 +2,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Homes by Billy</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body { 
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-            margin: 0; 
-            background: #f9f9f9; 
-            color: #333; 
-        }
-        header {
-            background: linear-gradient(to right, #ff6f61, #d63384);
-            color: white;
-            padding: 1rem 2rem;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        header img {
-            height: 50px;
-        }
-        section {
-            padding: 2rem;
-        }
-        .card {
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            margin-bottom: 2rem;
-            padding: 1rem;
-            transition: transform 0.3s ease;
-        }
-        .card:hover {
-            transform: scale(1.02);
-        }
-        .card img {
-            width: 100%;
-            border-radius: 10px;
-        }
-        .whatsapp {
-            background: #25D366;
-            color: white;
-            padding: 0.5rem 1rem;
-            display: inline-block;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 1rem;
-        }
-        .contact-corner {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: #d63384;
-            color: white;
-            padding: 1rem;
-            border-radius: 10px;
-            font-weight: bold;
-            z-index: 999;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Homes by Billy</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+      color: #111827;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #111827;
+      color: #fff;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo img {
+      height: 50px;
+    }
+    .contact-fixed {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      background: #10b981;
+      padding: 0.5rem 1rem;
+      border-radius: 999px;
+      color: #fff;
+      font-weight: bold;
+    }
+    .property-card {
+      background: #fff;
+      border-radius: 1rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      margin: 1rem;
+      padding: 1rem;
+      max-width: 300px;
+      float: left;
+    }
+    .property-card img {
+      width: 100%;
+      border-radius: 0.5rem;
+    }
+    .whatsapp-btn {
+      background: #25d366;
+      color: #fff;
+      padding: 0.5rem;
+      display: inline-block;
+      margin-top: 0.5rem;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <img src="homes_by_billy_logo.png" alt="Logo">
-        <h1>Homes by Billy</h1>
-    </header>
-    <section>
-        <div class="card">
-            <h2>Modern 2 Bedroom Apartment – Westlands</h2>
-            <img src="https://via.placeholder.com/800x400?text=Westlands+2BR+Apartment" alt="Westlands Apartment">
-            <p>Ksh 9.5M - Elegant modern apartment near Sarit Centre with parking and gym access.</p>
-            <a href="https://wa.me/254707513970?text=I'm%20interested%20in%20the%20Westlands%202BR" class="whatsapp">WhatsApp Billy</a>
-        </div>
-        <div class="card">
-            <h2>Luxury Penthouse – Kilimani</h2>
-            <img src="https://via.placeholder.com/800x400?text=Kilimani+Penthouse" alt="Kilimani Penthouse">
-            <p>Ksh 18M - 3-bedroom luxury penthouse with panoramic views and rooftop terrace.</p>
-            <a href="https://wa.me/254707513970?text=I'm%20interested%20in%20the%20Kilimani%20Penthouse" class="whatsapp">WhatsApp Billy</a>
-        </div>
-        <div class="card">
-            <h2>Affordable Studio – Westlands</h2>
-            <img src="https://via.placeholder.com/800x400?text=Westlands+Studio+Apartment" alt="Studio Apartment">
-            <p>Ksh 4.2M - Fully furnished studio ideal for professionals. Close to major offices.</p>
-            <a href="https://wa.me/254707513970?text=I'm%20interested%20in%20the%20Studio%20Apartment" class="whatsapp">WhatsApp Billy</a>
-        </div>
-    </section>
-    <div class="contact-corner">
-        📱 +254 707 513 970
-    </div>
+  <header>
+    <div class="logo"><img src="logo.png" alt="Logo"></div>
+    <h1>Homes by Billy</h1>
+  </header>
+  <div class="contact-fixed">
+    WhatsApp: +254707513970
+  </div>
+
+  <div class="property-card">
+    <img src="westlands.jpg" alt="Westlands Apartment">
+    <h3>2BR Apartment - Westlands</h3>
+    <p>Modern design, 24/7 security, Ksh 85,000/month</p>
+    <a class="whatsapp-btn" href="https://wa.me/254707513970" target="_blank">Contact via WhatsApp</a>
+  </div>
+
+  <div class="property-card">
+    <img src="kilimani.jpg" alt="Kilimani Apartment">
+    <h3>3BR Apartment - Kilimani</h3>
+    <p>Spacious layout, pool access, Ksh 120,000/month</p>
+    <a class="whatsapp-btn" href="https://wa.me/254707513970" target="_blank">Contact via WhatsApp</a>
+  </div>
 </body>
 </html>
+    
